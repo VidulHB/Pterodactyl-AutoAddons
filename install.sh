@@ -100,7 +100,7 @@ bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/
 while [ "$done" == false ]; do
   options=(
     "Restore Panel Backup (Restore your panel if you have problems or want to remove addons)"
-    "Install Sub Domain Manager (Only 1.6.6 and 1.8.1)"
+    "Install Sub Domain Manager (Only 1.6.6 and 1.8.1).ee"
 
 
     "Cancel Installation"
