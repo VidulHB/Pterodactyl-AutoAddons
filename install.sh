@@ -91,37 +91,6 @@ Backup() {
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/backup.sh)
 }
 
-More_Buttons() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/More_Buttons/build.sh)
-}
-
-More_Server_Info() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/More_Server_Info/build.sh)
-}
-
-Server_Router_Icons() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Server_Router_Icons/build.sh)
-}
-
-PMA_Button_NavBar() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/PMA_Button_NavBar/build.sh)
-}
-
-PMA_Button_Database_Tab() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/PMA_Button_Database_Tab/build.sh)
-}
-
-MC_Paste() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/MC_Paste/build.sh)
-}
-
-Bigger_Console() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/build.sh)
-}
-
-Files_In_Editor() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Files_In_Editor/build.sh)
-}
 
 Sub_Domain() {
 bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/build.sh)
@@ -131,14 +100,6 @@ bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/
 while [ "$done" == false ]; do
   options=(
     "Restore Panel Backup (Restore your panel if you have problems or want to remove addons)"
-    "Install More Buttons (Only 1.6.6 and 1.7.0)"
-    "Install More Server Info (Only 1.6.6 and 1.7.0)"
-    "Install Server Router Icons (Only 1.6.6 and 1.7.0)"
-    "Install PMA Button NavBar (Only 1.6.6 and 1.7.0)"
-    "Install PMA Button Database Tab (Only 1.6.6 and 1.7.0)"
-    "Install MC Paste (Only 1.6.6 and 1.7.0)"
-    "Install Bigger Console (Only 1.6.6 and 1.7.0)"
-    "Install Files In Editor (Only 1.6.6 and 1.7.0)"
     "Install Sub Domain Manager (Only 1.6.6 and 1.8.1)"
 
 
@@ -147,14 +108,6 @@ while [ "$done" == false ]; do
 
   actions=(
     "Backup"
-    "More_Buttons"
-    "More_Server_Info"
-    "Server_Router_Icons"
-    "PMA_Button_NavBar"
-    "PMA_Button_Database_Tab"
-    "MC_Paste"
-    "Bigger_Console"
-    "Files_In_Editor"
     "Sub_Domain"
 
 
