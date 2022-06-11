@@ -93,7 +93,7 @@ bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons
 
 
 Sub_Domain() {
-bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/build2.sh)
+bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/main/addons/version1.x/Bigger_Console/build2.sh)
 }
 
 
