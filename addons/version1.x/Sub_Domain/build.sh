@@ -156,7 +156,7 @@ backup() {
 print "Performing security backup..."
 
 if [ -d "$PTERO/PanelBackup[Auto-Addons]" ]; then
-    print "There is already a backup, skipping step..."
+    print "There is already a backup, skipping step....."
   else
     cd $PTERO
     if [ -d "$PTERO/node_modules" ]; then
