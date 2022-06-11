@@ -178,7 +178,7 @@ print "Downloading files..."
 mkdir -p $PTERO/temp
 curl -sSLo $PTERO/temp/subdomain.zip https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/blob/main/addons/version1.x/Sub_Domain/subdomain.zip
 sudo apt install unrar
-unzip -q $PTERO/temp/subdomain.zip
+unzip -q $PTERO/temp/subdomain
 cp -rf -- $PTERO/temp/subdomain/* "$PTERO"
 rm -rf $PTERO/temp
 }
