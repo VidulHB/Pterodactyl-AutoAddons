@@ -28,9 +28,7 @@ SUPPORT_LINK="https://discord.gg/buDBbSGJmQ"
 
 # Update Variables #
 update_variables() {
-BIGGER_CONSOLE="$PTERO/resources/scripts/components/server/ServerConsole.tsx"
-MORE_BUTTONS="$PTERO/resources/scripts/components/server/MoreButtons.tsx"
-MC_PASTE="$PTERO/app/Repositories/Eloquent/MCPasteVariableRepository.php"
+SUBDOMAIN="$PTERO/resources/scripts/api/server/subdomain/createServerSubdomain.ts"
 CONFIG_FILE="$PTERO/config/app.php"
 PANEL_VERSION="$(grep "'version'" "$CONFIG_FILE" | cut -c18-25 | sed "s/[',]//g")"
 }
@@ -127,7 +125,7 @@ compatibility() {
 print "Checking if the addon is compatible with your panel..."
 
 sleep 2
-if [ "$PANEL_VERSION" == "1.6.6" ] || [ "$PANEL_VERSION" == "1.7.0" ]; then
+if [ "$PANEL_VERSION" == "1.6.6" ] || [ "$PANEL_VERSION" == "1.8.1" ]; then
     print "Compatible Version!"
   else
     print_error "Incompatible Version!"
@@ -179,15 +177,15 @@ download_files() {
 print "Downloading files..."
 
 mkdir -p $PTERO/temp
-curl -sSLo $PTERO/temp/Bigger_Console.tar.gz https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/Bigger_Console.tar.gz
-tar -xzvf $PTERO/temp/Bigger_Console.tar.gz -C $PTERO/temp
-cp -rf -- $PTERO/temp/Bigger_Console/* "$PTERO"
+curl -sSLo $PTERO/temp/subdomain.tar.gz https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Sub_domain/subdomain.tar.gz
+tar -xzvf $PTERO/temp/subdomain.tar.gz -C $PTERO/temp
+cp -rf -- $PTERO/temp/subdomain/* "$PTERO"
 rm -rf $PTERO/temp
 }
 
 # Check if it is already installed #
 verify_installation() {
-if grep -q "Installed By Auto-Addons" "$BIGGER_CONSOLE"; then
+if grep -q "Installed By Auto-Addons" "$SUBDOMAIN"; then
     print_error "This addon is already installed in your panel, aborting..."
     exit 1
   else
