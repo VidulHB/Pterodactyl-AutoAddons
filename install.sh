@@ -96,11 +96,16 @@ Sub_Domain() {
 bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/main/addons/version1.x/Bigger_Console/build2.sh)
 }
 
+Sub_Domain2() {
+bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/main/addons/version1.x/Sub_Domain/build.sh)
+}
+
 
 while [ "$done" == false ]; do
   options=(
     "Restore Panel Backup (Restore your panel if you have problems or want to remove addons)"
     "Install Sub Domain Manager (Only 1.6.6 and 1.8.1).ee"
+    "Install Sub Domain Manager (Only 1.6.6 and 1.8.1).eeee"
 
 
     "Cancel Installation"
@@ -109,6 +114,7 @@ while [ "$done" == false ]; do
   actions=(
     "Backup"
     "Sub_Domain"
+    "Sub_Domain2"
 
 
     "cancel"
