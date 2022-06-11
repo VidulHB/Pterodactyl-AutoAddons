@@ -121,7 +121,17 @@ update_variables
 }
 
 # Verify Compatibility #
+compatibility() {
+print "Checking if the addon is compatible with your panel..."
 
+sleep 2
+if [ "$PANEL_VERSION" == "1.7.0" ] || [ "$PANEL_VERSION" == "1.8.1" ]; then
+    print "Compatible Version!"
+  else
+    print_error "Incompatible Version!"
+    exit 1
+fi
+}
 
 # Install Dependencies #
 dependencies() {
