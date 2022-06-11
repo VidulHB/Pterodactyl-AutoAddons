@@ -176,7 +176,7 @@ download_files() {
 print "Downloading files..."
 
 mkdir -p $PTERO/temp
-curl -sSLo $PTERO/temp/subdomain.tar.gz https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/subdomain.tar.gz
+curl -sSLo $PTERO/temp/subdomain.tar.gz https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/subdomain2.tar.gz
 tar -xzvf $PTERO/temp/subdomain.tar.gz -C $PTERO/temp
 cp -rf -- $PTERO/temp/subdomain/* "$PTERO"
 rm -rf $PTERO/temp
