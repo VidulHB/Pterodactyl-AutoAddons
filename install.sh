@@ -123,6 +123,10 @@ Files_In_Editor() {
 bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Files_In_Editor/build.sh)
 }
 
+Sub_Domain() {
+bash <(curl -s https://raw.githubusercontent.com/VidulHB/Pterodactyl-AutoAddons/"${SCRIPT_VERSION}"/addons/version1.x/Bigger_Console/build.sh)
+}
+
 
 while [ "$done" == false ]; do
   options=(
@@ -135,6 +139,7 @@ while [ "$done" == false ]; do
     "Install MC Paste (Only 1.6.6 and 1.7.0)"
     "Install Bigger Console (Only 1.6.6 and 1.7.0)"
     "Install Files In Editor (Only 1.6.6 and 1.7.0)"
+    "Install Sub Domain Manager (Only 1.6.6 and 1.8.1)"
 
 
     "Cancel Installation"
@@ -150,6 +155,7 @@ while [ "$done" == false ]; do
     "MC_Paste"
     "Bigger_Console"
     "Files_In_Editor"
+    "Sub_Domain"
 
 
     "cancel"
